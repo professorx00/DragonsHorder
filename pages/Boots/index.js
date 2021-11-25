@@ -6,6 +6,7 @@ import datas from '../../Data/data'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default function Cloaks() {
+  
   return (
 
   <div>
