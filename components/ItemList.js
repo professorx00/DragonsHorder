@@ -6,7 +6,8 @@ export default function ItemList({datas, cat}) {
     return (
         <div className="container">
             {data.map((item)=>{
-                const html = JSON.stringify(item.description).replaceAll('"',"")
+                const html = JSON.stringify(item.description)
+                const modifiedHtml = html.replaceAll('"','')
                 return (
                 <div className='container-md m-2 shadow-lg rounded-3' key={item.Name}>
                     <div className='row justify-content-space-between rounded-top-3'>
@@ -19,7 +20,7 @@ export default function ItemList({datas, cat}) {
                     </div>
                     <div className='row bg-primary text-white rounded-3'>
                         <div className='col'>
-                            <div dangerouslySetInnerHTML={ { __html: html} }></div>
+                            <div dangerouslySetInnerHTML={ { __html: modifiedHtml} }></div>
                         </div>
                     </div>
                 </div>
