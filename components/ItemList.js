@@ -8,7 +8,7 @@ export default function ItemList({datas, cat}) {
             {data.map((item)=>{
 
                 return (
-                <div className='container-md m-2 shadow-lg rounded-3'>
+                <div className='container-md m-2 shadow-lg rounded-3' key={item.Name}>
                     <div className='row justify-content-space-between rounded-top-3'>
                         <div className="col justify-content-between border border-1 rounded-top-3">
                             <h3>{item.Name}</h3>
