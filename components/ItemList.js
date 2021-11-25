@@ -7,7 +7,7 @@ export default function ItemList({datas, cat}) {
         <div className="container">
             {data.map((item)=>{
                 const html = JSON.stringify(item.description)
-                const modifiedHtml = html.replaceAll('"','')
+                // const modifiedHtml = html.replaceAll('"','')
                 return (
                 <div className='container-md m-2 shadow-lg rounded-3' key={item.Name}>
                     <div className='row justify-content-space-between rounded-top-3'>
