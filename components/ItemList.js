@@ -20,7 +20,7 @@ export default function ItemList({datas, cat}) {
                     </div>
                     <div className='row bg-primary text-white rounded-3'>
                         <div className='col'>
-                            <div dangerouslySetInnerHTML={ { __html: modifiedHtml} }></div>
+                            <div dangerouslySetInnerHTML={ { __html: html} }></div>
                         </div>
                     </div>
                 </div>
